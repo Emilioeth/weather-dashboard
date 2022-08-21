@@ -122,3 +122,34 @@ header h1 {
     color: black;
 }
 
+.results-boxes {
+    display: flex;
+}
+
+.result5-box{
+    width: 17.5%;
+    background-color: rgb(32, 81, 145);
+    margin: 25px 10px 0px 10px;
+    height: 225px;
+    padding: 2px 0px 0px 5px;
+    border: 3px solid black;
+}
+
+.date5 {
+    font-weight: bold;
+}
+
+.result5-box ul {
+    margin-top: 10px;
+}
+
+.result5-box ul li {
+    font-weight: 400;
+    padding: 8px 0px;
+}
+h2 img {
+    margin: 0px 0px -40px 0px;
+}
+#main-list li span{
+    color: black;
+}
