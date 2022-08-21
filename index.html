@@ -5,10 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather-Dashboard</title>
+    <link rel="stylesheet" href="./Assets/CSS/bulma.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="./Assets/CSS/style.css"/>
 </head>
 <body>
- 
     
-    
+    <header>
+
+        <h1> 
+            Weather Dashboard
+        </h1>
+
+    </header>
+
+    <main class="main-content columns">
+
+        <section class="search-part column is-4">
+
+            <h2 id="search-city-title"> 
+                Search for a City :
+            </h2>
+
+            <div id="search-area">
+                    
+                <div id="user-search">
+                    <input type="text" id="city-input" name="city-input" value="" placeholder="City" autocomplete="off" />
+                    <button id="search-btn"> <i class="fa-solid fa-magnifying-glass"></i> </button>
+                </div>
+
+                <div id="user-history">
+
+                    <h2>
+                        Past Searches
+                    </h2>
+
+                    <div id="user-history-list">
+
+                    </div>
+
+                    <button id="clear-btn" class="clear-history-btn"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="results-part column">
+
+            <div class="results-box">
+                
+                <h2 id="city-result">
+                    
+                </h2>
+                <ul id="main-list">
+                    <li class="result-city-list">
+                        Temperature: <span id="current-temp"></span>
+                    </li>
+                    <li class="result-city-list">
+                        Humidity: <span id="current-hum"></span>
+                    </li>
+                    <li class="result-city-list">
+                        Wind Speed: <span id="current-wind"></span>
+                    </li>
+                    <li class="result-city-list">
+                        UV Index: <span id="current-uv"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="results-5">
+                
+                <h3>
+                    5-Day Forecast :
+                </h3>
+
+
+
+                <div class="results-boxes">
+                    <div class="result5-box">
+                        <h4 id="date5-1" class="date5">
+                            
+                        </h4>
+                        <p id="day5-img1">
+
+                        </p>
+                        <ul>
+                            <li>
+                                Temp: <span id="day5-temp1"></span>
+                            </li>
+                            <li>
+                                Wind: <span id="day5-wind1"></span>
+                            </li>
+                            <li>
+                                Humidity: <span id="day5-humid1"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="result5-box">
+                        <h4 id="date5-2" class="date5">
+                            
+                        </h4>
+                        <p id="day5-img2">
+
+                        </p>
+                        <ul>
+                            <li>
+                                Temp: <span id="day5-temp2"></span>
+                            </li>
+                            <li>
+                                Wind: <span id="day5-wind2"></span>
+                            </li>
+                            <li>
+                                Humidity: <span id="day5-humid2"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="result5-box">
+                        <h4 id="date5-3" class="date5">
+                            
+                        </h4>
+                        <p id="day5-img3">
+
+                        </p>
+                        <ul>
+                            <li>
+                                Temp: <span id="day5-temp3"></span>
+                            </li>
+                            <li>
+                                Wind: <span id="day5-wind3"></span>
+                            </li>
+                            <li>
+                                Humidity: <span id="day5-humid3"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="result5-box">
+                        <h4 id="date5-4" class="date5">
+                            
+                        </h4>
+                        <p id="day5-img4">
+
+                        </p>
+                        <ul>
+                            <li>
+                                Temp: <span id="day5-temp4"></span>
+                            </li>
+                            <li>
+                                Wind: <span id="day5-wind4"></span>
+                            </li>
+                            <li>
+                                Humidity: <span id="day5-humid4"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="result5-box">
+                        <h4 id="date5-5" class="date5">
+                           
+                        </h4>
+                        <p id="day5-img5">
+
+                        </p>
+                        <ul>
+                            <li>
+                                Temp: <span id="day5-temp5"></span>
+                            </li>
+                            <li>
+                                Wind: <span id="day5-wind5"></span>
+                            </li>
+                            <li>
+                                Humidity: <span id="day5-humid5"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./Assets/JS/script.js"></script>
 </body>
 </html>
